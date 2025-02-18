@@ -7,13 +7,43 @@
 }
 nav {
     background-color: #352b2b;
-    padding: 20px;
+    padding: 10px;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    color:  white;
+    font-size: 16 px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.navbar-links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
-  }
-  
+}
+
+.navbar-search input {
+    padding: 5px;
+    border-radius: 15 px;
+    border: none;
+    outline: none;
+}
+
+.navbar-search button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: #2e5746;
+    color: white;
+    cursor: pointer;
+}
+
   nav ul {
     list-style-type: none;
     /* padding: 0; */
@@ -27,17 +57,28 @@ nav {
   nav a {
     text-decoration: none;
     color: #ebe6e6;
-    font-weight: bold;
+    font-weight: normal;
   }
   
   /* Basic CSS for the form elements */
   body {
     font-family: Arial, sans-serif;
     /* margin: 20px; */
+    background-image: url('./travel_background.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
-  h1 {
+  .bordered-heading {
+    color: white;
     margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 48;
+    padding-left: 60px;
+    padding-top: 60px;
+    border: 2px red;
+    padding: 60px;
+    border-radius: 5px;
   }
   
   div {
@@ -58,8 +99,17 @@ nav {
   
   button {
     padding: 7px 15px;
-    background-color: #4CAF50;
+    background-color: #465e47;
     color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .book-button {
+    padding: 7px 15px;
+    padding-left: 60px;
+    color: white;
+    background-color: #465e47;
     border: none;
     cursor: pointer;
   }
@@ -71,6 +121,12 @@ nav {
   /* Basic CSS for the report section */
   h2 {
     margin-top: 30px;
+    color: white;
+    font-size: 16;
+    font-weight: 200;
+    padding-left: 60px;
+    background-color: gray;
+    size: 120;
   }
   
   #report,#result {
@@ -78,14 +134,16 @@ nav {
     max-width: 400px;
     word-wrap: break-word;
   }
-#result{
-  height: 400px;
-  width: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
+  
+  #result{
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    }
+
   #result img{
     width: 200px;
     height: 100px;
